@@ -147,7 +147,7 @@ const player = new Sprite({
 		down: playerDownImage,
 		right: playerRightImage,
 	},
-	speed: 2,
+	speed: 4,
 });
 
 /*
@@ -202,7 +202,7 @@ function animation() {
 		// By default, player.canMove is true and player will move on command
 		if (player.canMove) {
 			frameMovables.forEach((frameMovable) => {
-				frameMovable.position.y += 2;
+				frameMovable.position.y += player.speed;
 			});
 		}
 	}
@@ -231,7 +231,7 @@ function animation() {
 
 		if (player.canMove) {
 			frameMovables.forEach((frameMovable) => {
-				frameMovable.position.x += 2;
+				frameMovable.position.x += player.speed;
 			});
 		}
 	}
@@ -260,7 +260,7 @@ function animation() {
 
 		if (player.canMove) {
 			frameMovables.forEach((frameMovable) => {
-				frameMovable.position.y -= 2;
+				frameMovable.position.y -= player.speed;
 			});
 		}
 	}
@@ -289,7 +289,7 @@ function animation() {
 
 		if (player.canMove) {
 			frameMovables.forEach((frameMovable) => {
-				frameMovable.position.x -= 2;
+				frameMovable.position.x -= player.speed;
 			});
 		}
 	}
