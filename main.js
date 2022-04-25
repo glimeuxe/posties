@@ -37,7 +37,7 @@ let tiled_mapZoom = 400; // Based on zoom of exported map backgroundImage
 let mapPixelSize = (tiled_pixelSize * tiled_mapZoom) / 100; // 48px by default
 
 let boundariesMap = [];
-let _boundaryValue = 2049; // Based on non-zero value in map's collisions.js file
+let _boundaryValue = 1025; // Based on non-zero value in map's collisions.js file
 
 let initialMapOffset = {
 	x: -496,
